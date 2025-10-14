@@ -1,0 +1,20 @@
+name = "form-redirector"
+main = "src/index.ts"
+compatibility_date = "2024-10-01"
+
+# KV binding (new style: no preview_id)
+[[kv_namespaces]]
+binding = "URLS_KV"
+id = "2b12a3adcdf845738cfd6210e50e2268"
+
+# D1 binding
+[[d1_databases]]
+binding = "LOG_DB"
+database_name = "form_redirect_logs"
+database_id = "68100d2f-9f5e-4221-bd9d-427a66951c5d"
+
+[vars]
+DEFAULT_URL = "https://docs.google.com/document/d/1abKn6eenB7K90G3kPrRq0TjjfEtj_5RGF2K6_IjTV0Y/edit?usp=sharing"
+POOL_TTL_MS = "300000"
+PRIVACY_GEO_ENABLED = "true"
+PRIVACY_HASH_IP = "true"
